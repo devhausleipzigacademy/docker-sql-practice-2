@@ -27,9 +27,9 @@ After successfully creating the table, run the statements inside [data.sql](data
 ### 2. Select only the Names of all the Bands
 [Solution](solutions/2.sql)
 
-Change the name of the column the data returns to `Band Name`
+Change the name of the column the data returns to `bandName`
 
-| Band Name         | 
+| bandName          | 
 |-------------------| 
 | Seventh Wonder    | 
 | Metallica         | 
@@ -53,9 +53,9 @@ Make sure to only return one result from this query, and that you are not return
 
 There are multiple different ways to solve this problem, but they will all involve a join.
 
-Return the band name as `Band Name`.
+Return the band name as bandName.
 
-| Band Name         | 
+| bandName          | 
 |-------------------| 
 | Seventh Wonder    | 
 | Metallica         | 
@@ -69,9 +69,9 @@ Return the band name as `Band Name`.
 
 This is very similar to #4 but will require more than just a join.
 
-Return the band name as `Band Name`.
+Return the band name as bandName.
 
-| Band Name     | 
+| bandName      | 
 |---------------| 
 | Dream Theater | 
 
@@ -80,9 +80,9 @@ Return the band name as `Band Name`.
 
 This problem sounds a lot like #3 but the solution is quite a bit different. Try looking up the SUM aggregate function.
 
-Return the album name as `Name`, the album release year as `Release Year`, and the album length as `Duration`.
+Return the album name as name, the album release year as releaseYear, and the album length as duration.
 
-| Name           | Release Year | Duration          | 
+| Name           | releaseYear  | duration          | 
 |----------------|--------------|-------------------| 
 | Death Magnetic | 2008         | 74.76666593551636 | 
 
@@ -91,7 +91,7 @@ Return the album name as `Name`, the album release year as `Release Year`, and t
 
 Set the release year to 1986.
 
-You may run into an error if you try to update the release year by using `release_year IS NULL` in the WHERE statement of your UPDATE. This is because MySQL Workbench by default will not let you update a table that has a primary key without using the primary key in the UPDATE statement. This is a good thing since you almost never want to update rows without using the primary key, so to get around this error make sure to use the primary key of the row you want to update in the WHERE of the UPDATE statement.
+You may run into an error if you try to update the release year by using `release_year IS NULL` in the WHERE statement of your UPDATE. This is a good thing since you almost never want to update rows without using the primary key, so to get around this error make sure to use the primary key of the row you want to update in the WHERE of the UPDATE statement.
 
 ### 8. Insert a record for your favorite Band and one of their Albums
 [Solution](solutions/8.sql)
@@ -106,9 +106,9 @@ The order of how you delete the records is important since album has a foreign k
 ### 10. Get the Average Length of all Songs
 [Solution](solutions/10.sql)
 
-Return the average length as `Average Song Duration`.
+Return the average length as averageSongDuration.
 
-| Average Song Duration | 
+| averageSongDuration   | 
 |-----------------------| 
 | 5.352472513259112     | 
 
@@ -116,9 +116,9 @@ Return the average length as `Average Song Duration`.
 ### 11. Select the longest Song off each Album
 [Solution](solutions/11.sql)
 
-Return the album name as `Album`, the album release year as `Release Year`, and the longest song length as `Duration`.
+Return the album name as album, the album release year as releaseYear, and the longest song length as duration.
 
-| Album                       | Release Year | Duration | 
+| album                       | releaseYear  | duration | 
 |-----------------------------|--------------|----------| 
 | Tiara                       | 2018         | 9.5      | 
 | The Great Escape            | 2010         | 30.2333  | 
@@ -144,9 +144,9 @@ Return the album name as `Album`, the album release year as `Release Year`, and 
 
 This is one of the toughest question on the list. It will require you to chain together two joins instead of just one.
 
-Return the band name as `Band`, the number of songs as `Number of Songs`.
+Return the band name as band, the number of songs as numberOfSongs.
 
-| Band              | Number of Songs | 
+| band              | numberOfSongs   | 
 |-------------------|-----------------| 
 | Seventh Wonder    | 35              | 
 | Metallica         | 27              | 

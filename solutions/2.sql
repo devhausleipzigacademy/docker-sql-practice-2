@@ -1,2 +1,2 @@
-SELECT bands.name AS 'Band Name'
+SELECT bands.name AS bandName
 FROM bands;
