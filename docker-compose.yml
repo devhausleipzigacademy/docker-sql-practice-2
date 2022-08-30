@@ -10,8 +10,6 @@ services:
         container_name: pgsql-example-2
         ports:
             - "5432:5432"
-        env_file:
-            - .env
         volumes:
             - type: volume
               source: pgsql-data
