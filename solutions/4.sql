@@ -1,5 +1,5 @@
 
-/* This assummes all bands have a unique name */
+/* This assumes all bands have a unique name */
 SELECT DISTINCT bands.name AS bandName
 FROM bands
 JOIN albums ON bands.id = albums.band_id;

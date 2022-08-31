@@ -132,6 +132,8 @@ Return the average length as averageSongDuration.
 
 [Solution](solutions/11.sql)
 
+Try looking up the MAX aggregate function.
+
 Return the album name as album, the album release year as releaseYear, and the longest song length as duration.
 
 | album                       | releaseYear | duration |
