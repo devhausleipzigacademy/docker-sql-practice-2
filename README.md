@@ -14,7 +14,7 @@ POSTGRES_PORT=5432
 POSTGRES_DB=main
 ```
 
--   Spin up the PostgreSQL container with docker-compose, then run the statements inside [schema.sql](schema.sql).
+-   Spin up the PostgreSQL container with docker compose, then run the statements inside [schema.sql](schema.sql).
 
 ## Exercises
 
