@@ -1,5 +1,5 @@
-DELETE FROM albums
-WHERE name = 'Favorite Album Name';
-
-DELETE FROM bands
+WITH delete AS (
+    DELETE FROM albums
+    WHERE name = 'Favorite Album Name'
+) DELETE FROM bands
 WHERE name = 'Favorite Band Name';
